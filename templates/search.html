@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchPage</title>
+</head>
+<body>
+    <h1>Dog Search:</h1>
+    <br />
+    <br />
+    <form action="" type="search">
+        <input placeholder="pincode" name="pincodesearch"/>
+        <input placeholder="city" name="citysearch"/>
+        <button type="submit">Search</button>
+    </form>
+    <div>
+        {%if dogs%} {%for dog in dogs%}
+        <div class="wrapper">
+            <p>
+              {{"Dog Name : "}} {{dog.dogname}} <br />
+              {{"Owner name : "}} {{dog.ownername}} <br />
+              {{"Dog Breed : "}} {{dog.dogbreed}} <br />
+              {{"Owner Email : "}} {{dog.owneremail}} <br />
+            </p>
+            </div>
+        {% endfor %} {%endif%} 
+      </div>
+</body>
+</html>
