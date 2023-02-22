@@ -1,2 +1,2 @@
 # add&search
-simple add and search in flask!!
+simple add and search using flask and sqlite!!
